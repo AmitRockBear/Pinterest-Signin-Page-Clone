@@ -1,0 +1,271 @@
+* {
+  padding: 0px;
+  border: 0px;
+  background-color: #ffffff;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* Initializing elements */
+
+body {
+  overflow-y: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  line-break: auto;
+  color: inherit;
+}
+
+img {
+  border-radius: 5%;
+}
+
+input {
+  border-radius: 16px;
+  border: 2px solid rgb(222, 222, 222);
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  min-height: 48px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input:focus {
+  box-shadow: 0 0 0 4px rgba(0, 132, 255, 0.6);
+  outline: none;
+}
+
+button {
+  color: #ffffff;
+  margin: 20px 0;
+  border-radius: 24px;
+  font-weight: 800;
+  min-height: 40px;
+}
+
+.social-dimensions {
+  width: 20px;
+  height: 20px;
+}
+
+/* Generic classes that will make an element fit all available width space */
+
+.flex-container {
+  display: flex;
+}
+
+.fill-width {
+  flex: 1;
+}
+
+/* Class that puts shadow on the grid */
+.layer {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Grid classes */
+
+.grid-container {
+  margin: 2.7% auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.grid-item {
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+/* Sign in paper classes + ids */
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 25.2%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 10px;
+  min-width: 484px;
+}
+
+.card-content {
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+.card-title {
+  word-break: break-word;
+  color: rgb(51, 51, 51);
+  font-size: 36px;
+  text-align: center;
+  width: 55%;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+#printest_icon {
+  margin-bottom: 8px;
+}
+
+/* The width of the elements within the sign in paper */
+.w-60 {
+  width: 60%;
+}
+
+#forgot_pass {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#login_button {
+  background-color: #e60023;
+}
+
+#login_button:hover {
+  background-color: #d50c22;
+  cursor: pointer;
+}
+
+#Or {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px auto;
+}
+
+.facebook-button {
+  background-color: #1877f2;
+  color: #ffffff;
+  margin: 20px 0 0 0;
+  border-radius: 24px;
+  min-height: 40px;
+  display: flex;
+}
+
+#facebook_icon {
+  background-color: #1877f2;
+  margin: 8px;
+}
+
+.facebook-button .text {
+  background-color: inherit;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  margin: auto 0 auto 12px;
+}
+
+.facebook-button:hover {
+  cursor: pointer;
+}
+
+.google-button {
+  background-color: #efefef;
+  margin: 8px 0 16px 0;
+  border-radius: 24px;
+  min-height: 40px;
+  display: flex;
+}
+
+#google_icon {
+  background-color: #efefef;
+  margin: 8px;
+  height: 20px;
+  width: 20px;
+}
+
+.google-button .text {
+  background-color: #efefef;
+  color: #4b4b4b;
+  font-weight: bold;
+  font-size: 16px;
+  margin: auto 0 auto 12px;
+}
+
+.google-button:hover {
+  cursor: pointer;
+}
+
+.privacy-text {
+  font-size: 11px;
+  font-weight: normal;
+  text-align: center;
+  color: rgb(118, 118, 118, 0.8);
+  word-break: break-word;
+}
+
+.bold {
+  font-weight: bold;
+  color: rgb(118, 118, 118);
+}
+
+.bold:hover {
+  cursor: pointer;
+}
+
+.sign-up {
+  color: #3a3a3a;
+  text-align: center;
+  font-size: 12px;
+  margin: 16px auto;
+}
+
+hr.solid {
+  border-bottom: 2px solid rgb(228, 228, 228);
+  margin: 10px auto;
+  width: 50%;
+}
+
+/* Top left sign up button classes */
+
+.btn-signup {
+  background-color: #efefef;
+  position: absolute;
+  left: 25px;
+  top: 29px;
+  min-width: 130px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-signup:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 132, 255, 0.6);
+}
